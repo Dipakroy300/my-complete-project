@@ -8,6 +8,7 @@ import MaiLayout from "./MaiLayout";
 import Posts from "../Posts/Posts";
 import Users from "../Users/Users";
 import PostDetails from "../PostDetails/PostDetails";
+import PostInfo from "../Post/PostInfo/PostInfo";
 
 const router = createBrowserRouter([
     {
@@ -43,6 +44,11 @@ const router = createBrowserRouter([
             {
                 path: "postDetails/:id",
                 element: <PostDetails />
+            }
+            ,
+            {
+                path:"postInfo/:id",
+                element: <PostInfo></PostInfo>
             }
 
             //     {

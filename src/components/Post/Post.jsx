@@ -7,7 +7,7 @@ const Post = ({ post }) => {
     const { id } = post;
 
     const navigateHandler = () => {
-        navigate(`/posts/${id}`);
+        navigate(`/postInfo/${id}`);
     }
 
     const { title, body } = post;
