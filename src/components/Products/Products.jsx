@@ -3,6 +3,8 @@ import { useLoaderData } from 'react-router-dom';
 import Product from '../Product/Product';
 import Orders from '../Orders/Orders';
 
+import   toast from 'react-hot-toast';
+
 const Products = () => {
     // Fetch products using useLoaderData
     const products = useLoaderData();
@@ -12,8 +14,16 @@ const Products = () => {
 
     // Function to handle adding a product to the cart
     const handleAdd = (product) => {
-        // Add the product to the cart
-        setCart([...cart, product]);
+
+        const exists=cart.find(p=> p.id ===product.id)
+        if(exists){
+            toast('you have already added this t-shirt');
+        }
+       
+       else{
+            // Add the product to the cart
+            setCart([...cart, product]);
+       }
     };
 
     const removeFromCart=(id)=>{
@@ -29,6 +39,7 @@ const Products = () => {
                 {products.map((product) => (
                     <Product key={product.id} product={product} handleAdd={handleAdd} />
                 ))}
+                 
             </div>
 
             {/* Render Orders component with cart passed as prop */}

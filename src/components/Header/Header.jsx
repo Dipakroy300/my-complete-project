@@ -66,17 +66,41 @@ const Header = () => {
                 color="blue-gray"
                 className="p-1 font-normal"
             >
-                <NavLink  to="/contact" className={({ isActive }) =>
+                <NavLink  to="/posts" className={({ isActive }) =>
                     `nav-link ${isActive ? "bg-blue-600 px-2 py-1 rounded-md text-white" : ""}`
                 }>
-                  Contact
+                 Posts
+                </NavLink>
+            </Typography>
+            <Typography
+                as="li"
+                variant="small"
+                color="blue-gray"
+                className="p-1 font-normal"
+            >
+                <NavLink  to="/grandPa" className={({ isActive }) =>
+                    `nav-link ${isActive ? "bg-blue-600 px-2 py-1 rounded-md text-white" : ""}`
+                }>
+                  GrandPa
+                </NavLink>
+            </Typography>
+            <Typography
+                as="li"
+                variant="small"
+                color="blue-gray"
+                className="p-1 font-normal"
+            >
+                <NavLink  to="/users" className={({ isActive }) =>
+                    `nav-link ${isActive ? "bg-blue-600 px-2 py-1 rounded-md text-white" : ""}`
+                }>
+                  Users
                 </NavLink>
             </Typography>
         </ul>
     );
     return (
         <div className=" h-[80px]">
-            <Navbar className="fixed top-0  z-10 w-full rounded-none px-4 py-2 lg:px-8 lg:py-4">
+            <Navbar className="fixed top-0 bg-deep-orange-200  z-10 w-full rounded-none px-4 py-2 lg:px-8 lg:py-4">
                 <div className="flex items-center justify-between text-blue-gray-900">
                     <Typography
                         as="a"

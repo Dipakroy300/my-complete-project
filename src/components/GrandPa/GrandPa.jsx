@@ -6,8 +6,8 @@ const GrandPa = () => {
     return (
         <div className='border-solid border-2 border-sky-500 ms-80 mr-80 ps-40'>
 
-            <h1 className='text-2xl ms-36'>GrandPaa</h1>
-            <section className='ms-32 text-2xl flex gap-10 mt-10'>
+            <h1 className='text-3xl ms-40' >GrandPaa</h1>
+            <section className='flex gap-20'>
             <Father></Father>
             <Uncle></Uncle>
             </section>

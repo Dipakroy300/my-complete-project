@@ -5,6 +5,10 @@ const Uncle = () => {
     return (
         <div>
            <h1>Uncle</h1>
+
+           <div>
+            <Cousin></Cousin>
+           </div>
         </div>
     );
 };

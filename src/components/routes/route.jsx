@@ -5,6 +5,9 @@ import About from "../About/About";
 import Contact from "../Contact/Contact";
 import GrandPa from "../GrandPa/GrandPa";
 import MaiLayout from "./MaiLayout";
+import Posts from "../Posts/Posts";
+import Users from "../Users/Users";
+import PostDetails from "../PostDetails/PostDetails";
 
 const router = createBrowserRouter([
     {
@@ -25,14 +28,30 @@ const router = createBrowserRouter([
                 element: <About></About>,
             },
             {
-                path: "/contact",
-                element: <Contact></Contact>,
+                path: "/posts",
+                element: <Posts></Posts>,
             },
             {
                 path: "/grandpa",
                 element: <GrandPa></GrandPa>,
             },
-          
+            {
+                path: "/users",
+                element: <Users></Users>,
+
+            },
+            {
+                path: "postDetails/:id",
+                element: <PostDetails />
+            }
+
+            //     {
+            //         path:"user/:userId",
+            //         element:<PostDetails></PostDetails>,
+            //         loader:({params})=>fetch(`https://jsonplaceholder.typicode.com/users/${params.userId}`),
+
+            //    }
+
         ]
 
     },

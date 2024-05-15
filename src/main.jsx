@@ -13,13 +13,18 @@ import Contact from './components/Contact/Contact';
 import GrandPa from './components/GrandPa/GrandPa';
 import { ThemeProvider } from '@material-tailwind/react';
 import router from './components/routes/route';
+import { Toaster } from 'react-hot-toast';
 
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+
     <ThemeProvider>
+    
       <RouterProvider router={router} />
+
     </ThemeProvider>
+    
   </React.StrictMode>,
 )

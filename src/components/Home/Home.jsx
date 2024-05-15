@@ -3,9 +3,12 @@ import Header from '../Header/Header';
 import { Outlet } from 'react-router-dom';
 import { Typography } from '@material-tailwind/react';
 
+
 const Home = () => {
     const [item, setItem] = useState(false);
+
     console.log("Change", item);
+    
     const [fix,setFix]=useState(false);
     // console.log('change',fix);
     return (

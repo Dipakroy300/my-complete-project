@@ -4,6 +4,7 @@ import { Button, Card, CardBody, CardFooter, CardHeader, Typography } from '@mat
 const Product = ({ product, handleAdd }) => {
     const { picture, title, price } = product;
 
+   
     return (
         <div>
             <Card className="w-72">
