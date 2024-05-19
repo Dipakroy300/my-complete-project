@@ -96,6 +96,18 @@ const Header = () => {
                   Users
                 </NavLink>
             </Typography>
+            <Typography
+                as="li"
+                variant="small"
+                color="blue-gray"
+                className="p-1 font-normal"
+            >
+                <NavLink  to="/albums" className={({ isActive }) =>
+                    `nav-link ${isActive ? "bg-blue-600 px-2 py-1 rounded-md text-white" : ""}`
+                }>
+                 Albums
+                </NavLink>
+            </Typography>
         </ul>
     );
     return (
