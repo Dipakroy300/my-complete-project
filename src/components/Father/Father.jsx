@@ -4,7 +4,7 @@ import Daughter from '../Child/Daughter';
 
 const Father = () => {
     return (
-        <div className='bg-amber-900 p-5 rounded-lg' >
+        <div className='border border-4 p-5 rounded-lg' >
             <h1>Father</h1>
            <section className=' flex gap-5'>
                 <Child></Child>

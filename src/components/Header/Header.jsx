@@ -108,11 +108,12 @@ const Header = () => {
                  Albums
                 </NavLink>
             </Typography>
+            
         </ul>
     );
     return (
-        <div className=" h-[80px]">
-            <Navbar className="fixed top-0 bg-deep-orange-200  z-10 w-full rounded-none px-4 py-2 lg:px-8 lg:py-4">
+        <div className=" h-[80px] w-full">
+            <Navbar className="fixed top-0 bg-deep-orange-200  z-10 w-[100%] rounded-none px-4 py-2 lg:px-8 lg:py-4">
                 <div className="flex items-center justify-between text-blue-gray-900">
                     <Typography
                         as="a"

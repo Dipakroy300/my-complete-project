@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { ringContext } from '../GrandPa/GrandPa';
 
 const Child = () => {
+
+    const ring=useContext(ringContext);
     return (
         <div>
-            <h1>child</h1>
+            <h1>child:{ring}</h1>
+            <p>{ring}</p>
         </div>
     );
 };

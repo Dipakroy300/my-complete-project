@@ -12,6 +12,7 @@ import PostInfo from "../Post/PostInfo/PostInfo";
 import Albums from "../Albums/Albums";
 import AlbumInfo from "../AlbumInfo/AlbumInfo";
 
+
 const router = createBrowserRouter([
     {
         path: "/",
@@ -59,8 +60,8 @@ const router = createBrowserRouter([
             {
                 path:"albumInfo/:id",
                 element: <AlbumInfo></AlbumInfo>
-            }
-
+            },
+          
             //     {
             //         path:"user/:userId",
             //         element:<PostDetails></PostDetails>,
